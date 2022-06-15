@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { FaUser } from 'react-icons/fa'
-import { ADD_CLIENT } from '../mutations/ClientMutations'
-import { GET_CLIENTS } from '../queries/ClientQueries'
+import { ADD_CLIENT } from '../mutations/clientMutations'
+import { GET_CLIENTS } from '../queries/clientQueries'
 import { useMutation } from '@apollo/client'
 
 export default function AddClientModal() {
@@ -70,6 +70,7 @@ export default function AddClientModal() {
 							></button>
 						</div>
 						<div className='modal-body'>
+						{/* FORM START */}
 							<form onSubmit={onSubmit}>
 								<div className='mb-3'>
 									<label className='form-lable'>Name</label>
@@ -108,6 +109,7 @@ export default function AddClientModal() {
 								>
 									Submit
 								</button>
+								{/* FORM END */}
 							</form>
 						</div>
 					</div>
